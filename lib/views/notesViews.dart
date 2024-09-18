@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'widgets/addNoteButtonSheet.dart';
 import 'widgets/notesViewBody.dart';
 
 class Notesviews extends StatelessWidget {
@@ -15,10 +16,18 @@ class Notesviews extends StatelessWidget {
             Icons.add,
             size: 35,
           ),
-          onPressed: () {},
+          onPressed: () {
+            showModalBottomSheet(
+              context: context,
+              builder: (context) {
+                return const addNoteButtomSheet();
+              },
+            );
+          },
         ),
         body: const notesViewBody(),
       ),
     );
   }
 }
+
