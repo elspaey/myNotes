@@ -13,8 +13,9 @@ class CustomAppbar extends StatelessWidget {
           "Notes",
           style: TextStyle(fontSize: 30),
         ),
-        customSearchIcon()
+        customSearchIcon(),
       ],
     );
   }
 }
+
