@@ -42,7 +42,7 @@ class noteItem extends StatelessWidget {
             Text(
               "build Your carrier with Elsp3awey",
               style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 18,
                   color: Colors.black.withOpacity(0.4),
                   fontWeight: FontWeight.w400),
             ),
