@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
-=======
->>>>>>> 8e35338790f3cbd45211bdcca751fbcf842e7079
 
-class Editnoteviewbody extends StatelessWidget {
+
+
+import 'customAppBar.dart';
+import 'customTextField.dart';class Editnoteviewbody extends StatelessWidget {
   const Editnoteviewbody({super.key});
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
+
     return const Padding(
       padding: EdgeInsets.symmetric(horizontal: 24),
       child: Column(
@@ -36,10 +36,7 @@ class Editnoteviewbody extends StatelessWidget {
           ),
         ],
       ),
-=======
-    return Scaffold(
-      appBar: AppBar(),
->>>>>>> 8e35338790f3cbd45211bdcca751fbcf842e7079
+    
     );
   }
 }
