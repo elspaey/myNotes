@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 <<<<<<< HEAD
-import 'package:flutter_application_10/views/widgets/customAppBar.dart';
-import 'package:flutter_application_10/views/widgets/customTextField.dart';
 =======
 >>>>>>> 8e35338790f3cbd45211bdcca751fbcf842e7079
 
