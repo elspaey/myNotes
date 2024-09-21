@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_10/helper/constants.dart';
 import 'package:flutter_application_10/views/widgets/customTextField.dart';
 
+import 'addNoteForm.dart';
 import 'customButtom.dart';
 
 class buttomSheet extends StatelessWidget {
@@ -24,31 +25,7 @@ class bodyOfButtonSheet extends StatelessWidget {
         child: Padding(
           padding:
               EdgeInsets.only(bottom: MediaQuery.of(context).viewInsets.bottom),
-          child: const Column(
-            children: [
-              SizedBox(
-                height: 50,
-              ),
-              coustomTextField(hintText: "title"),
-              SizedBox(
-                height: 30,
-              ),
-              coustomTextField(
-                hintText: "Content",
-                maxLines: 5,
-              ),
-              SizedBox(
-                height: 25,
-              ),
-              customButton(
-                title: "Add",
-                theColor: kprimaryColor,
-              ),
-              SizedBox(
-                height: 25,
-              ),
-            ],
-          ),
+          child: const addNoteForm(),
         ),
       ),
     );
