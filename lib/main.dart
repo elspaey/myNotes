@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_10/bloc/add_note_cubit/add_note_cubit.dart';
 import 'package:flutter_application_10/helper/constants.dart';
 import 'package:flutter_application_10/helper/simple_bloc_observer.dart';
 import 'package:flutter_application_10/models/note_model.dart';

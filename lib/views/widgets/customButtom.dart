@@ -6,11 +6,12 @@ class customButton extends StatelessWidget {
       this.onTap,
       required this.title,
       this.theColor = Colors.blue,
-      this.fontColor = Colors.black});
+      this.fontColor = Colors.black,
+      this.isLoading = false});
   final String title;
   VoidCallback? onTap;
   final Color theColor, fontColor;
-
+  final bool isLoading;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -21,12 +22,20 @@ class customButton extends StatelessWidget {
         decoration: BoxDecoration(
             color: theColor, borderRadius: BorderRadius.circular(16)),
         child: Center(
-          child: Text(title,
-              style: TextStyle(
-                fontSize: 25,
-                fontWeight: FontWeight.bold,
-                color: fontColor,
-              )),
+          child: isLoading
+              ? const SizedBox(
+                  height: 27,
+                  width: 27,
+                  child: CircularProgressIndicator(
+                    color: Colors.black,
+                  ),
+                )
+              : Text(title,
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold,
+                    color: fontColor,
+                  )),
         ),
       ),
     );
